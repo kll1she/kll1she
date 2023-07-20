@@ -15,6 +15,7 @@ $background-color: #F9EAC7;
 $red-color: #CB2A00;
 $blue-color: #0FACB3;
 $yellow-color: #E8A910;
+$hover-red: #E55D39;
 
 body {
     background-color: $background-color;
@@ -29,4 +30,28 @@ body {
 }
 .jc-sb {
     justify-content: space-between;
+}
+
+.header, .footer {
+    padding: 38px 0;
+}
+.menu-item {
+    color: $red-color;
+    font-size: 24px;
+    transition: 0.2s ease;
+    &:not(:last-of-type) {
+        margin-right: 35px;
+    }
+    &:hover {
+        border-bottom: 2px solid $blue-color;
+    }
+}
+.logo {
+    color: $red-color;
+    font-weight: 700;
+    font-size: 32px;
+    transition: 0.2s ease;
+    &:hover {
+        color: $hover-red;
+    }
 }

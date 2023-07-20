@@ -1,0 +1,14 @@
+$red-color: #CB2A00;
+$blue-color: #0FACB3;
+$hover-red: #E55D39;
+
+.icon {
+    transition: 0.2s ease;
+    &:hover {
+        fill: $hover-red;
+        cursor: pointer;
+    }
+    &:not(:last-of-type) {
+        margin-right: 20px;
+    }
+}
