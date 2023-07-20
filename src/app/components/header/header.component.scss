@@ -1,0 +1,18 @@
+$red-color: #CB2A00;
+$blue-color: #0FACB3;
+
+.header {
+    padding: 38px 0;
+}
+.menu-item {
+    color: $red-color;
+    font-size: 24px;
+    &:not(:last-of-type) {
+        margin-right: 35px ;
+    }
+}
+.logo {
+    color: $red-color;
+    font-weight: 700;
+    font-size: 32px;
+}

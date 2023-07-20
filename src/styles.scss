@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@import "/src/null";
+
+@font-face {
+    font-weight: 400; /* Соответствует значению normal */
+    font-family: Actay;
+    src: url("../src/assets/font/Actay-Regular.otf");
+}
+@font-face {
+    font-weight: 700; /* Соответствует значению normal */
+    font-family: Actay;
+    src: url("../src/assets/font/ActayWide-Bold.otf");
+}
+
+$background-color: #F9EAC7;
+$red-color: #CB2A00;
+$blue-color: #0FACB3;
+$yellow-color: #E8A910;
+
+body {
+    background-color: $background-color;
+    font-family: 'Actay', sans-serif;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.fx {
+    display: flex;
+}
+.jc-sb {
+    justify-content: space-between;
+}
