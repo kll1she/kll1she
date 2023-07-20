@@ -1,0 +1,46 @@
+$background-color: #F9EAC7;
+$red-color: #CB2A00;
+$blue-color: #0FACB3;
+$yellow-color: #E8A910;
+$hover-red: #E55D39;
+
+.hello {
+    padding: 80px 0;
+    .name-block {
+        margin-bottom: 80px;
+        .name {
+            color: $red-color;
+            font-size: 32px;
+            margin-top: 108px;
+        }
+        .name-line {
+            animation: draw 5s ease forwards;
+        }
+    }
+    .heading {
+        width: 100%;
+        color: $red-color;
+        font-size: 120px;
+        font-weight: 700;
+        margin-bottom: 80px;
+    }
+    .description {
+        font-size: 16px;
+        color: $red-color;
+        margin-bottom: 80px;
+        max-width: 550px;
+    }
+    .button {
+        font-size: 24px;
+        color: $background-color;
+        background-color: $red-color;
+        padding: 20px 77px;
+        border-radius: 100px;
+        transition: 0.2s ease;
+        &:hover {
+            color: $red-color;
+            background-color: $background-color;
+            border: 2px solid $red-color;
+        }
+    }
+}

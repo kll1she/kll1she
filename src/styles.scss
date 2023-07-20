@@ -32,7 +32,7 @@ body {
     justify-content: space-between;
 }
 
-.header, .footer {
+.footer {
     padding: 38px 0;
 }
 .menu-item {
@@ -51,6 +51,7 @@ body {
     font-weight: 700;
     font-size: 32px;
     transition: 0.2s ease;
+    z-index: 2;
     &:hover {
         color: $hover-red;
     }

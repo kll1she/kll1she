@@ -1,3 +1,22 @@
 $red-color: #CB2A00;
 $blue-color: #0FACB3;
 $hover-red: #E55D39;
+$background-color: #F9EAC7;
+
+.header {
+    position: fixed;
+    width: 100%;
+}
+.nav {
+    padding: 38px 0;
+}
+.menu {
+    z-index: 2;
+}
+.blur {
+    background-color: $background-color;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
