@@ -11,10 +11,23 @@ $hover-red: #E55D39;
         .name {
             color: $red-color;
             font-size: 32px;
-            margin-top: 108px;
         }
-        .name-line {
-            animation: draw 5s ease forwards;
+    }
+    .marquee-container{
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        .marquee{
+            font-size: 130px;
+            line-height: 150%;
+            font-weight: 700;
+            color: $red-color;
+            white-space: nowrap;
+            animation: marquee 10s infinite linear;
+            margin-bottom: 80px;
+            &::after {
+                content: "ВЕБ ДИЗАЙН * ЛОГОТИПЫ * ВЁРСТКА * ";
+            }
         }
     }
     .heading {
@@ -23,24 +36,43 @@ $hover-red: #E55D39;
         font-size: 120px;
         font-weight: 700;
         margin-bottom: 80px;
+        text-align: center;
     }
     .description {
         font-size: 16px;
         color: $red-color;
+        margin: 0 auto;
         margin-bottom: 80px;
         max-width: 550px;
+        line-height: 140%;
+        text-align: center;
+    }
+    .btn-container {
+        width: 100%;
     }
     .button {
+        margin: 0 auto;
         font-size: 24px;
         color: $background-color;
         background-color: $red-color;
         padding: 20px 77px;
         border-radius: 100px;
         transition: 0.2s ease;
+        text-align: center;
+        border: 2px solid $background-color;
         &:hover {
             color: $red-color;
             background-color: $background-color;
             border: 2px solid $red-color;
         }
+    }
+}
+
+@keyframes marquee{
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-50%)
     }
 }

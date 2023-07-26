@@ -1,0 +1,29 @@
+$background-color: #F9EAC7;
+$red-color: #CB2A00;
+$blue-color: #0FACB3;
+$yellow-color: #E8A910;
+$hover-red: #E55D39;
+
+.about {
+    padding: 80px 0;
+}
+.photo {
+    margin-right: 80px;
+    border-radius: 50px;
+}
+.comment {
+    width: 19ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s ease;
+    animation-delay: 2s;
+}
+.about-text {
+    font-size: 24px;
+    color: $red-color;
+    line-height: 150%;
+}
+
+@keyframes typing {
+    from {width: 0;}
+}

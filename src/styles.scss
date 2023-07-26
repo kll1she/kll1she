@@ -1,4 +1,5 @@
 @import "/src/null";
+@import "/src/scroll.scss";
 
 @font-face {
     font-weight: 400; /* Соответствует значению normal */
@@ -17,6 +18,9 @@ $blue-color: #0FACB3;
 $yellow-color: #E8A910;
 $hover-red: #E55D39;
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: $background-color;
     font-family: 'Actay', sans-serif;
@@ -30,6 +34,11 @@ body {
 }
 .jc-sb {
     justify-content: space-between;
+}
+.ai-c {
+    align-items: center;
+    align-self: center;
+    align-content: center;
 }
 
 .footer {
@@ -54,5 +63,19 @@ body {
     z-index: 2;
     &:hover {
         color: $hover-red;
+    }
+}
+
+.block-description {
+    margin-bottom: 80px;
+    .block-name {
+        font-weight: 700;
+        font-size: 50px;
+        color: $red-color;
+        margin-right: 30px;
+    }
+    .comment {
+        font-size: 24px;
+        color: $blue-color;
     }
 }
