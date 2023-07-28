@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HelloComponent } from './components/home/hello/hello.component';
 import { AboutComponent } from './components/home/about/about.component';
 import { ProjectsComponent } from './components/home/projects/projects.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProjectsComponent } from './components/home/projects/projects.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

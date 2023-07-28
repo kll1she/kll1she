@@ -9,3 +9,16 @@ $background-color: #F9EAC7;
 .nav {
     padding: 38px 0;
 }
+.hamburger {
+    align-self: center;
+    cursor: pointer;
+    display: none;
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: 0.3s ease;
+        background-color: $red-color;
+    }
+}

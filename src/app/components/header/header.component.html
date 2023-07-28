@@ -7,6 +7,11 @@
                 <a href="#" class="menu-item">Проекты</a>
                 <a href="#" class="menu-item">Связаться</a>
             </div>
+            <div class="hamburger" [ngClass]="{active: visibility}" (click)="toggle()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </div>
     <div class="blur"></div>
